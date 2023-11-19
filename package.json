@@ -1,0 +1,24 @@
+{
+  "name": "CORE_FW_GPT_Integrator_Styles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:teamstove/CORE_FW_GPT_Integrator_Styles.git",
+  "author": "STOVE, Inc.",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "postcss index.scss -o dist/gpt-integrator-styles.min.css",
+    "build:css:watch": "yarn build:css --watch"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.31",
+    "postcss-cli": "10.1.0",
+    "postcss-prefix-selector": "^1.16.0",
+    "postcss-scss": "4.0.9",
+    "sass": "1.69.5",
+    "tailwindcss": "3.3.5"
+  }
+}
