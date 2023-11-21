@@ -19,11 +19,12 @@
     //display: inline-block;
     .a-chat-init-display-chat-icon--inner-icon {
       //display: inline-block;
-      .a-chat-init-display-chat-icon--inner-icon-img {
+      .a-chat-init-display-chat-icon--inner-icon-img, .a-chat-init-display-chat-icon--inner-icon-img > svg {
         width: var(--a-chat-init-display--chat-icon--size);
         height: var(--a-chat-init-display--chat-icon--size);
         object-fit: contain;
         fill: var(--a-chat-init-display--chat-icon--fill-color);
+        stroke: var(--a-chat-init-display--chat-icon--fill-color);
       }
     }
   }
@@ -35,6 +36,8 @@
  */
 .a-chat-web-embed-chat-layout {
   display: inline-block;
+}
+.a-chat-wrapper {
   &[data-ui-layout-config--chaticonposition="right-bottom"], &[data-ui-layout-config--chaticonposition="left-bottom"] {
     .a-chat-init-display-chat-icon {
       position: fixed;

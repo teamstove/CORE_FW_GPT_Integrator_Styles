@@ -1,10 +1,4 @@
 
 .a-chat-web-embed-chat-layout {
   display: inline-block;
-  /**
-   * data-ui-layout-config--chaticonposition は
-   */
-  &[data-ui-layout-config--chaticonposition="right-bottom"], &[data-ui-layout-config--chaticonposition="left-bottom"] {
-
-  }
 }

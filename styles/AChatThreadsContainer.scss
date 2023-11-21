@@ -2,15 +2,14 @@
  * AChatThreadsContainer
  */
 .a-chat-threads-container {
-  //border: 3px dashed rgba(255,0,0,0.2); // TODO
-  //padding: 1em;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: var(--a-chat-threads--width); // TODO
   max-width: 100%;
   background: var(--a-chat-threads--background);
   //border: var(--a-chat-threads--border);
+  position: fixed;
+  z-index: var(--a-chat-threads--z-index);
+  bottom: 0;
+  width: var(--a-chat-threads--width); // TODO
+  max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
   @apply border border-b-gray-200 border-gray-100;
   @apply drop-shadow-xl rounded-md z-50 shadow-blue-500;
   .a-chat-threads-container--inner {
@@ -25,10 +24,75 @@
     .a-chat-threads-container--footer {}
   }
 }
-[data-ui-layout-config--chatthreadwindowdisplaytype="popover"] {
+
+/**
+ * Fixed layout になる パターン
+ * 'popover' | 'modal' | 'full-screen' | 'sidebar-right' | 'sidebar-left'
+ */
+.a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="popover"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="modal"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="full-screen"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="sidebar-right"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="sidebar-left"] {
   .a-chat-threads-container {
-    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6)); // TODO
-    top: var(--a-chat-threads--popover-spacer);
+    position: fixed;
+    z-index: var(--a-chat-threads--z-index);
+    //bottom: 0;
+    width: var(--a-chat-threads--width); // TODO
+    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
+    top: 0; //var(--a-chat-threads--popover-spacer);
+    right: 0; //var(--a-chat-threads--popover-spacer);
+  }
+  &.a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="popover"] {
+    .a-chat-threads-container {
+      //position: fixed;
+      //z-index: var(--a-chat-threads--z-index);
+      //bottom: 0;
+      //width: var(--a-chat-threads--width); // TODO
+      //max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
+      top: var(--a-chat-threads--popover-spacer);
+      right: var(--a-chat-threads--popover-spacer);
+    }
+  }
+  // TODO: うまくいかん... Mobile での表示の場合 FullScreen になるようにしたい
+  @media (max-width: 600px) {
+    .a-chat-threads-container--overlay {
+      position: fixed;
+      z-index: calc(var(--a-chat-threads--z-index) - 10);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--a-chat-threads--overlay-background);
+    }
+    .a-chat-threads-container {
+      width: calc(100vw - (var(--a-chat-threads--fullscreen-width-spacer) * 2));
+      right: var(--a-chat-threads--fullscreen-width-spacer);
+      left: var(--a-chat-threads--fullscreen-width-spacer);
+    }
+  }
+}
+
+
+.a-chat-wrapper[data-a-chat-ui-state-fullscreen="true"] {
+  .a-chat-threads-container--overlay {
+    position: fixed;
+    z-index: calc(var(--a-chat-threads--z-index) - 10);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--a-chat-threads--overlay-background);
+  }
+  .a-chat-threads-container {
+    position: fixed;
+    z-index: var(--a-chat-threads--z-index);
+    bottom: 0;
+    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 2));
+    width: calc(100vw - (var(--a-chat-threads--popover-spacer) * 2));
     right: var(--a-chat-threads--popover-spacer);
+    left: var(--a-chat-threads--popover-spacer);
+    // Mobile の場合は 横幅を 100% にする
+    //@media (max-width: 767px) {
+    //  width: calc(100vw - (var(--a-chat-threads--fullscreen-width-spacer) * 2));
+    //  right: var(--a-chat-threads--fullscreen-width-spacer);
+    //  left: var(--a-chat-threads--fullscreen-width-spacer);
+    //}
   }
 }

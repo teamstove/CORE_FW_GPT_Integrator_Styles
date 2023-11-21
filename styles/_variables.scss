@@ -27,12 +27,16 @@
   --a-chat-threads--background-header: var(--a-chat--theme--color-white);
   --a-chat-threads--background-main: var(--a-chat-threads--background);
   --a-chat-threads--background-footer: var(--a-chat--theme--color-white);
+  --a-chat-threads--overlay-background: rgba(0, 0, 0, 0.5);
   --a-chat-threads--width: 400px;
+  --a-chat-threads--z-index: 4000;
   --a-chat-threads--padding-y: calc(var(--a-chat--theme--spacer-base) * 0.3);
   --a-chat-threads--padding-x: calc(var(--a-chat--theme--spacer-base) * .8);
 
   --a-chat-threads--border: 1px solid var(--color-secondary);
   --a-chat-threads--popover-spacer: 12px;
+  --a-chat-threads--fullscreen-width-spacer: 3px;
+
 
 
   /** Icon の設定値 **/
