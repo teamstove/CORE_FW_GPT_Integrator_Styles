@@ -4,24 +4,30 @@
 .a-chat-threads-container {
   max-width: 100%;
   background: var(--a-chat-threads--background);
-  //border: var(--a-chat-threads--border);
+  border: var(--a-chat-threads--border);
+  border-radius: var(--a-chat-threads--border-radius);
   position: fixed;
   z-index: var(--a-chat-threads--z-index);
   bottom: 0;
   width: var(--a-chat-threads--width); // TODO
   max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
-  @apply border border-b-gray-200 border-gray-100;
-  @apply drop-shadow-xl rounded-md z-50 shadow-blue-500;
+  @apply drop-shadow-xl z-50 shadow-blue-500;
   .a-chat-threads-container--inner {
     overflow: scroll;
     width: 100%;
     height: 100%;
     @apply flex flex-col;
-    .a-chat-threads-container--header {}
+    .a-chat-threads-container--header {
+      background-color: var(--a-chat-threads--background-header);
+      border-radius: var(--a-chat-threads--border-radius) var(--a-chat-threads--border-radius) 0 0;
+    }
     .a-chat-threads-container--main {
       @apply flex-grow overflow-scroll;
     }
-    .a-chat-threads-container--footer {}
+    .a-chat-threads-container--footer {
+      background: var(--a-chat-threads--background-footer);
+      border-radius: 0 0 var(--a-chat-threads--border-radius) var(--a-chat-threads--border-radius);
+    }
   }
 }
 
