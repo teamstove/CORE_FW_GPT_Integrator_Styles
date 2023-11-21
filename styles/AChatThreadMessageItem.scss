@@ -1,0 +1,16 @@
+.a-chat-thread-message-item {
+  @apply flex flex-col flex-wrap gap-1;
+  .a-chat-thread-message-item--header {
+    @apply flex flex-row;
+  }
+  .a-chat-thread-message-item--body {}
+  .a-chat-thread-message-item--footer {}
+  //@apply flex flex-row flex-wrap gap-1;
+  /**
+   * 自分から送信したものでなければ... right margin を設定
+   */
+  @apply mr-4;
+  &[data-a-chat-thread-message-item--is-my-mesage="true"] {
+    @apply mr-0 ml-4;
+  }
+}

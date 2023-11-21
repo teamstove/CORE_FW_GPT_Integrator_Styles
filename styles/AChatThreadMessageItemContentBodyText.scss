@@ -1,0 +1,40 @@
+.a-chat-thread-message-item-content-body-text {
+  @apply shadow shadow-blue-100;
+  font-size: var(--a-chat-message-item-content-body-text--font-size);
+  line-height: var(--a-chat-message-item-content-body-text--line-height);
+  letter-spacing: var(--a-chat-message-item-content-body-text--letter-spacing);
+  font-weight: var(--a-chat-message-item-content-body-text--font-weight);
+  background: var(--a-chat-message-item-content-body-text--background);
+  color: var(--a-chat-message-item-content-body-text--color);
+  padding: var(--a-chat-message-item-content-body-text--padding);
+  border-radius: var(--a-chat-message-item-content-body-text--border-radius);
+  border: var(--a-chat-message-item-content-body-text--border);
+  border-top-left-radius: 0;
+
+  p, ul, ol, dl, blockquote, pre {
+    @apply mb-1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold mt-2 mb-1;
+    font-size: 1.2em;
+  }
+
+}
+
+/**
+ * 自分から送信したメッセージの Style を設定
+ */
+[data-a-chat-thread-message-item--is-my-mesage="true"] {
+  .a-chat-thread-message-item-content-body-text {
+    //--a-chat-message-item-content-body-text--sent-from-me--background: var(--a-chat--theme--color-primary);
+    //--a-chat-message-item-content-body-text--sent-from-me--color: white;
+    //--a-chat-message-item-content-body-text--sent-from-me--border: 1px solid var(--a-chat--theme--color-primary-lighten);
+    background: var(--a-chat-message-item-content-body-text--sent-from-me--background);
+    color: var(--a-chat-message-item-content-body-text--sent-from-me--color);
+    border: var(--a-chat-message-item-content-body-text--sent-from-me--border);
+    border-top-left-radius: var(--a-chat-message-item-content-body-text--border-radius);
+    border-top-right-radius: 0;
+  }
+}
+
+

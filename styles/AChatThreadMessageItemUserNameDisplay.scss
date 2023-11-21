@@ -1,0 +1,9 @@
+.a-chat-thread-message-item-user-name-display {
+  @apply flex flex-row items-baseline gap-0.5 flex-wrap flex-grow;
+  &--display-user-name {
+    @apply text-sm font-bold text-gray-700;
+  }
+  &--created-at {
+    @apply text-xs text-gray-500;
+  }
+}

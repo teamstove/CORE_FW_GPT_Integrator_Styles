@@ -1,0 +1,6 @@
+.a-chat-thread-message-item-feedback-controls {
+  @apply ml-auto;
+  @apply text-xs text-gray-500;
+  @apply opacity-30 hover:opacity-100;
+  @apply cursor-pointer hover:underline;
+}
