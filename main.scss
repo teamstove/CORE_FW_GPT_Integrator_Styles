@@ -1,0 +1,49 @@
+/** load tailwindcss, Ref: https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports **/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "styles/_variables.scss";
+
+
+/** Wrappers, Layouts **/
+@import "styles/AgentChatUI.scss";
+@import "styles/AChatWrapper.scss";
+@import "styles/AChatWebEmbedChatLayout.scss";
+
+/** AChatInitDisplay **/
+@import "styles/AChatInitDisplay.scss";
+@import "styles/AChatInitDisplayChatIcon.scss";
+@import "styles/AChatInitDisplayCustomHtml.scss";
+@import "styles/AChatInitDisplayLinkText.scss";
+
+/** Thread Wrapper **/
+@import "styles/AChatThreadLayoutHeader.scss";
+@import "styles/AChatThreadLayoutMain.scss";
+@import "styles/AChatThreadLayoutFooter.scss";
+@import "styles/AChatThreadsContainer.scss";
+
+/** Message List **/
+@import "styles/AChatThreadMessageList.scss";
+@import "styles/AChatThreadMessageItem.scss";
+@import "styles/AChatThreadMessageItemContent.scss";
+@import "styles/AChatThreadMessageItemContentAttachments.scss";
+@import "styles/AChatThreadMessageItemContentBodyText.scss";
+@import "styles/AChatThreadMessageItemFeedbackControls.scss";
+@import "styles/AChatThreadMessageItemUserNameDisplay.scss";
+
+/** Form **/
+@import "styles/AChatMessageForm.scss";
+@import "styles/AChatMessageFormAttachFileButton.scss";
+@import "styles/AChatMessageFormSubmitButton.scss";
+@import "styles/AChatMessageFormTextInput.scss";
+
+
+@import "styles/_sample-component-name.scss";
+
+.cfwgiui-wrapper {
+  display: inline-block;
+}
+
+

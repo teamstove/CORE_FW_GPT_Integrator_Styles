@@ -4,7 +4,7 @@ module.exports = {
   // contain all css classes in the output
   content: [
     // '../AgentChatUI/**/*.{html,js,vue,ts}',
-    './index.scss',
+    // './main.scss',
   ],
   theme: {
     extend: {},

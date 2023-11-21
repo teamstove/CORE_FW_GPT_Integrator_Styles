@@ -1,1 +1,68 @@
-@import './sample-component-name.scss';
+@import "AChatInitDisplay";
+@import "sample-component-name";
+
+//
+//.a-chat-wrapper {
+//  &--main {
+//    .a-chat-web-embed-chat-layout {
+//      .a-chat-web-embed-chat-layout--btn-big {
+//        // スタイルをここに追加
+//      }
+//
+//      .a-chat-init-display {
+//        &--type-chatIcon {
+//          .a-chat-init-display-chat-icon {
+//            &--position-right-bottom {
+//
+//            }
+//          }
+//        }
+//      }
+//
+//      .a-chat-threads-container {
+//        &--header {
+//          // スタイルをここに追加
+//        }
+//
+//        &--main {
+//          .a-chat-thread-layout-main {
+//            .a-chat-thread-message-list {
+//              .a-chat-thread-message-item {
+//                .a-chat-thread-message-item-user-name-display {
+//                  // スタイルをここに追加
+//                }
+//                .a-chat-thread-message-item-feedback-controls {
+//                  // スタイルをここに追加
+//                }
+//                .a-chat-thread-message-item-content {
+//                  .a-chat-thread-message-item-content-body-text {
+//                    // スタイルをここに追加
+//                  }
+//                  .a-chat-thread-message-item-content-attachments {
+//                    // スタイルをここに追加
+//                  }
+//                  .a-chat-thread-message-item-content-form {
+//                    .a-chat-message-form-text-input {
+//                      &__input {
+//                        // スタイルをここに追加
+//                      }
+//                    }
+//                    .a-chat-message-form-submit-button {
+//                      &__button {
+//                        // スタイルをここに追加
+//                      }
+//                    }
+//                  }
+//                }
+//              }
+//            }
+//          }
+//        }
+//
+//        &--footer {
+//          // スタイルをここに追加
+//        }
+//      }
+//    }
+//  }
+//}

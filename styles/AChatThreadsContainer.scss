@@ -1,0 +1,34 @@
+/**
+ * AChatThreadsContainer
+ */
+.a-chat-threads-container {
+  //border: 3px dashed rgba(255,0,0,0.2); // TODO
+  //padding: 1em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: var(--a-chat-threads--width); // TODO
+  max-width: 100%;
+  background: var(--a-chat-threads--background);
+  //border: var(--a-chat-threads--border);
+  @apply border border-b-gray-200 border-gray-100;
+  @apply drop-shadow-xl rounded-md z-50 shadow-blue-500;
+  .a-chat-threads-container--inner {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    @apply flex flex-col;
+    .a-chat-threads-container--header {}
+    .a-chat-threads-container--main {
+      @apply flex-grow overflow-scroll;
+    }
+    .a-chat-threads-container--footer {}
+  }
+}
+[data-ui-layout-config--chatthreadwindowdisplaytype="popover"] {
+  .a-chat-threads-container {
+    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6)); // TODO
+    top: var(--a-chat-threads--popover-spacer);
+    right: var(--a-chat-threads--popover-spacer);
+  }
+}

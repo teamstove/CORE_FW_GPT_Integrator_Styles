@@ -1,0 +1,55 @@
+/**
+ * AChatInitDisplayChatIcon.vue
+ * - アイコン表示のスタイル設定
+ * - サイズは --a-chat-init-display--chat-icon--size で上書き可能
+ */
+.a-chat-init-display-chat-icon {
+  @apply shadow drop-shadow shadow-blue-400 hover:shadow-blue-200;
+  display: inline-block;
+  padding: var(--a-chat-init-display--chat-icon--padding-size);
+  border-radius: 800px;
+  background: var(--a-chat-init-display--chat-icon--background);
+  border: var(--a-chat-init-display--chat-icon--border-width) solid var(--a-chat-init-display--chat-icon--border-color);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--a-chat-init-display--chat-icon--hover-background);
+  }
+  .a-chat-init-display-chat-icon--inner {
+    //display: inline-block;
+    .a-chat-init-display-chat-icon--inner-icon {
+      //display: inline-block;
+      .a-chat-init-display-chat-icon--inner-icon-img {
+        width: var(--a-chat-init-display--chat-icon--size);
+        height: var(--a-chat-init-display--chat-icon--size);
+        object-fit: contain;
+        fill: var(--a-chat-init-display--chat-icon--fill-color);
+      }
+    }
+  }
+}
+
+/**
+ * ChatIcon position の設定
+ * - right-bottom, or left-bottom の場合は、Window に対して position fixed 表示
+ */
+.a-chat-web-embed-chat-layout {
+  display: inline-block;
+  &[data-ui-layout-config--chaticonposition="right-bottom"], &[data-ui-layout-config--chaticonposition="left-bottom"] {
+    .a-chat-init-display-chat-icon {
+      position: fixed;
+      bottom: var(--a-chat-init-display--chat-icon--fixed-posision-margin);
+      z-index: 999;
+    }
+  }
+  &[data-ui-layout-config--chaticonposition="right-bottom"] {
+    .a-chat-init-display-chat-icon {
+      right: var(--a-chat-init-display--chat-icon--fixed-posision-margin);
+    }
+  }
+  &[data-ui-layout-config--chaticonposition="left-bottom"] {
+    .a-chat-init-display-chat-icon {
+      left: var(--a-chat-init-display--chat-icon--fixed-posision-margin);
+    }
+  }
+}

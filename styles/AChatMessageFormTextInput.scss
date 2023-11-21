@@ -1,0 +1,8 @@
+.a-chat-message-form-text-input {
+  .a-chat-message-form-text-input--textarea {
+    @apply w-full p-2;
+    @apply bg-gray-100 hover:bg-blue-50 focus:bg-blue-50;
+    @apply border border-gray-200 hover:border-gray-100 rounded;
+    @apply focus:border-gray-200 focus:outline-none focus:ring-0 focus:ring-gray-200 focus:ring-offset-0 focus:ring-offset-gray-100;
+  }
+}

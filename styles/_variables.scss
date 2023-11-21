@@ -1,0 +1,47 @@
+/**
+ * 上書き可能性のある変数を設定
+ */
+.a-chat-wrapper {
+  /** Theme values **/
+  --a-chat--theme--spacer-base: 16px;
+  --a-chat--theme--font-size-base: calc(var(--a-chat--theme--spacer-base) * 0.9);
+  --a-chat--theme--color-primary: #2950d0;
+  --a-chat--theme--color-primary-darken: #1e3a8c;
+  --a-chat--theme--color-primary-lighten: #3a6ed0;
+  --a-chat--theme--color-white: #ffffff;
+  /** grayscales **/
+  --a-chat--theme--color-gray-25: #FCFCFD;
+  --a-chat--theme--color-gray-50: #F9FAFB;
+  --a-chat--theme--color-gray-100: #F2F4F7;
+  --a-chat--theme--color-gray-200: #E4E7EC;
+  --a-chat--theme--color-gray-300: #D0D5DD;
+  --a-chat--theme--color-gray-400: #90a3b6;
+  --a-chat--theme--color-gray-500: #667085;
+  --a-chat--theme--color-gray-600: #475467;
+  --a-chat--theme--color-gray-700: #344054;
+  --a-chat--theme--color-gray-800: #1D2939;
+  --a-chat--theme--color-gray-900: #101828;
+
+  /** Thread style の設定値 **/
+  --a-chat-threads--background: var(--a-chat--theme--color-gray-100);
+  --a-chat-threads--background-header: var(--a-chat--theme--color-white);
+  --a-chat-threads--background-main: var(--a-chat-threads--background);
+  --a-chat-threads--background-footer: var(--a-chat--theme--color-white);
+  --a-chat-threads--width: 400px;
+  --a-chat-threads--padding-y: calc(var(--a-chat--theme--spacer-base) * 0.5);
+  --a-chat-threads--padding-x: calc(var(--a-chat--theme--spacer-base) * 1);
+
+  --a-chat-threads--border: 1px solid var(--color-secondary);
+  --a-chat-threads--popover-spacer: 12px;
+
+
+  /** Icon の設定値 **/
+  --a-chat-init-display--chat-icon--size: 32px;
+  --a-chat-init-display--chat-icon--padding-size: calc(var(--a-chat-init-display--chat-icon--size) / 2.3);
+  --a-chat-init-display--chat-icon--fixed-posision-margin: 8px;
+  --a-chat-init-display--chat-icon--background: var(--a-chat--theme--color-primary);
+  --a-chat-init-display--chat-icon--border-color: var(--a-chat--theme--color-primary-lighten);
+  --a-chat-init-display--chat-icon--border-width: 2px;
+  --a-chat-init-display--chat-icon--hover-background: var(--a-chat--theme--color-primary-darken);
+  --a-chat-init-display--chat-icon--fill-color: white;
+}
