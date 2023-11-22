@@ -1,18 +1,22 @@
 // common button style
 .a-chat-message-form-submit-button {
+  @apply flex flex-row flex-shrink-0 items-start gap-1;
   &--button {
     @apply inline-block;
-    @apply bg-gray-200;
-    @apply shadow;
-    @apply text-gray-500 font-bold;
-    @apply rounded;
-    @apply px-2 py-1;
-    @apply transition-colors duration-200 ease-in-out;
-    @apply focus:outline-none focus:ring-0 focus:ring-blue-500 focus:ring-offset-0 focus:ring-offset-white;
-    &.submittable {
+    &[disabled] {
+      @apply bg-gray-200;
+      @apply text-gray-500 font-bold;
+      @apply cursor-not-allowed;
+    }
+    &:not([disabled]) {
       background: var(--a-chat-form--submit-button--background);
       @apply shadow-blue-200;
       @apply text-white;
     }
+    @apply shadow;
+    @apply rounded;
+    @apply px-2 py-1;
+    @apply transition-colors duration-200 ease-in-out;
+    @apply focus:outline-none focus:ring-0 focus:ring-blue-500 focus:ring-offset-0 focus:ring-offset-white;
   }
 }

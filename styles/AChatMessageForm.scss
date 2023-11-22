@@ -2,5 +2,7 @@
   //@apply h-6 overflow-hidden;
   transition: height 1.2s ease-in-out;
   @apply hover:h-auto hover:overflow-visible focus:h-auto focus:overflow-visible;
-
+  .a-chat-message-form--controls {
+    @apply flex flex-row gap-2;
+  }
 }
