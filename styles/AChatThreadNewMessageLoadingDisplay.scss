@@ -1,0 +1,19 @@
+.a-chat-thread-new-message-loading-display--user-sent-message--item {
+  @apply shadow shadow-blue-100;
+  @apply mr-0 ml-4;
+  font-size: var(--a-chat-message-item-content-body-text--font-size);
+  line-height: var(--a-chat-message-item-content-body-text--line-height);
+  letter-spacing: var(--a-chat-message-item-content-body-text--letter-spacing);
+  font-weight: var(--a-chat-message-item-content-body-text--font-weight);
+  //background: var(--a-chat-message-item-content-body-text--background);
+  //color: var(--a-chat-message-item-content-body-text--color);
+  padding: var(--a-chat-message-item-content-body-text--padding);
+  border-radius: var(--a-chat-message-item-content-body-text--border-radius);
+  //border: var(--a-chat-message-item-content-body-text--border);
+  //border-top-left-radius: 0;
+  background: var(--a-chat-message-item-content-body-text--sent-from-me--background);
+  color: var(--a-chat-message-item-content-body-text--sent-from-me--color);
+  border: var(--a-chat-message-item-content-body-text--sent-from-me--border);
+  //border-top-left-radius: var(--a-chat-message-item-content-body-text--border-radius);
+  border-top-right-radius: 0;
+}

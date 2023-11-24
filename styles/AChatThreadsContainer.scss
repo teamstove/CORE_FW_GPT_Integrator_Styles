@@ -92,6 +92,8 @@
     bottom: 0;
     max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 2));
     width: calc(100vw - (var(--a-chat-threads--popover-spacer) * 2));
+    max-width: var(--a-chat-threads--fullscreen-max-width);
+    margin: 0 auto;
     right: var(--a-chat-threads--popover-spacer);
     left: var(--a-chat-threads--popover-spacer);
     // Mobile の場合は 横幅を 100% にする

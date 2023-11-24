@@ -3,7 +3,10 @@
   .a-chat-thread-message-item--header {
     @apply flex flex-row;
   }
-  .a-chat-thread-message-item--body {}
+  .a-chat-thread-message-item--body {
+    width: 100%;
+    overflow: scroll;
+  }
   .a-chat-thread-message-item--footer {}
   //@apply flex flex-row flex-wrap gap-1;
   /**
