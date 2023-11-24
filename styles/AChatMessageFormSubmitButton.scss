@@ -3,6 +3,7 @@
   @apply flex flex-row flex-shrink-0 items-start gap-1;
   &--button {
     @apply inline-block;
+    @apply flex flex-row flex-shrink-0 items-center gap-1;
     &[disabled] {
       @apply bg-gray-200;
       @apply text-gray-500 font-bold;
