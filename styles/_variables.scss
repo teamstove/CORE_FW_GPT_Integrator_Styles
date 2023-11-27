@@ -16,12 +16,12 @@
   --a-chat--theme--color-gray-100: #F2F4F7;
   --a-chat--theme--color-gray-200: #E4E7EC;
   --a-chat--theme--color-gray-300: #D0D5DD;
-  --a-chat--theme--color-gray-400: #90a3b6;
-  --a-chat--theme--color-gray-500: #667085;
-  --a-chat--theme--color-gray-600: #475467;
-  --a-chat--theme--color-gray-700: #344054;
-  --a-chat--theme--color-gray-800: #1D2939;
-  --a-chat--theme--color-gray-900: #101828;
+  --a-chat--theme--color-gray-400: #889ab3;
+  --a-chat--theme--color-gray-500: #606a84;
+  --a-chat--theme--color-gray-600: #434f68;
+  --a-chat--theme--color-gray-700: #313c56;
+  --a-chat--theme--color-gray-800: #1b263c;
+  --a-chat--theme--color-gray-900: #0f162c;
 
   /** Thread style の設定値 **/
   --a-chat-threads--background: var(--a-chat--theme--color-gray-100);
@@ -57,7 +57,7 @@
   --a-chat-message-item-content-body-text--letter-spacing: 0.01em;
   --a-chat-message-item-content-body-text--font-weight: 400;
   --a-chat-message-item-content-body-text--background: white;
-  --a-chat-message-item-content-body-text--color: var(--a-chat--theme--color-gray-600);
+  --a-chat-message-item-content-body-text--color: var(--a-chat--theme--color-gray-700);
   --a-chat-message-item-content-body-text--padding: 8px 12px;
   --a-chat-message-item-content-body-text--border-radius: 12px;
   --a-chat-message-item-content-body-text--border: 1px solid var(--a-chat--theme--color-gray-200);
@@ -68,4 +68,8 @@
 
   /** Form style の設定値 **/
   --a-chat-form--submit-button--background: var(--a-chat--theme--color-primary);
+
+  /** Sidebar style の設定値 **/
+  --a-chat-sidebar--max-width: 380px;
+  --a-chat-sidebar--background: var(--a-chat--theme--color-gray-50);
 }

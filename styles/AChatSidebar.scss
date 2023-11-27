@@ -1,0 +1,42 @@
+.a-chat-sidebar {
+  .a-chat-sidebar--overlay {
+    position: fixed;
+    z-index: calc(var(--a-chat-threads--z-index) + 90);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--a-chat-threads--overlay-background);
+  }
+  .a-chat-sidebar--container {
+    position: fixed;
+    z-index: calc(var(--a-chat-threads--z-index) + 100);
+    bottom: 0;
+    max-height: 100vh;
+    height: 100vh;
+    max-width: var(--a-chat-sidebar--max-width);
+    width: 100vw;
+    background: var(--a-chat-sidebar--background);
+    .a-chat-sidebar--inner {
+      height: 100%;
+      overflow-y: auto;
+      .a-chat-sidebar--inner-header {}
+      .a-chat-sidebar--inner-body {
+          padding: 0 var(--a-chat--theme--spacer-base);
+      }
+      .a-chat-sidebar--inner-footer {}
+    }
+  }
+  &.a-chat-sidebar--position-right {
+    .a-chat-sidebar--container {
+      right: 0;
+    }
+  }
+  &.a-chat-sidebar--position-left {
+    .a-chat-sidebar--container {
+      left: 0;
+    }
+  }
+
+}
+

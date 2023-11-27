@@ -1,6 +1,7 @@
 .a-chat-thread-message-item {
   @apply flex flex-col flex-wrap gap-1;
   .a-chat-thread-message-item--header {
+    margin: 0 var(--a-chat-threads--padding-x);
     @apply flex flex-row;
   }
   .a-chat-thread-message-item--body {
