@@ -39,10 +39,10 @@
   // Emoticon
   img.a-chat-thread-message-item-content-body-text--section--emotion-image {
     position: absolute;
-    top: -6px;
-    left: -8px;
-    width: 32px;
-    height: 32px;
+    top: var(--a-chat-message-item-content-body-text--emotion-image-top);
+    left: var(--a-chat-message-item-content-body-text--emotion-image-left);
+    width: var(--a-chat-message-item-content-body-text--emotion-image-size);
+    height: var(--a-chat-message-item-content-body-text--emotion-image-size);
     object-fit: cover;
     object-position: center center;
     @apply rounded-full;
@@ -50,12 +50,13 @@
   /**
    * アイコン表示時の spacer
    */
-  &::before {
-    content: '';
+  .a-chat-thread-message-item-content-body-text--section--emotion-image--after-spacer {
     display: inline-block;
-    width: 6px;
-    height: 6px;
-    @apply mr-2;
+    width: var(--a-chat-message-item-content-body-text--emotion-image-size);
+    margin-right: calc(var(--a-chat-message-item-content-body-text--emotion-image-left) * 2);
+    height: var(--a-chat-message-item-content-body-text--emotion-image-size);
+    margin-bottom: calc(var(--a-chat-message-item-content-body-text--emotion-image-top) * 2);
+    float: left;
   }
 }
 
@@ -77,10 +78,8 @@
     border-top-left-radius: var(--a-chat-message-item-content-body-text--border-radius);
     border-top-right-radius: 0;
     text-indent: 0;
-    img.a-chat-thread-message-item-content-body-text--section--emotion-image {
-      display: none;
-    }
-    &::before {
+    margin-top: 0;
+    img.a-chat-thread-message-item-content-body-text--section--emotion-image, .a-chat-thread-message-item-content-body-text--section--emotion-image--after-spacer {
       display: none;
     }
   }
