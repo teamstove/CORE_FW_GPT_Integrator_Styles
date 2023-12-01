@@ -13,7 +13,7 @@
   max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
   @apply drop-shadow-xl z-50 shadow-blue-500;
   .a-chat-threads-container--inner {
-    overflow: scroll;
+    //overflow: scroll;
     width: 100%;
     height: 100%;
     @apply flex flex-col;
@@ -22,7 +22,7 @@
       border-radius: var(--a-chat-threads--border-radius) var(--a-chat-threads--border-radius) 0 0;
     }
     .a-chat-threads-container--main {
-      @apply flex-grow overflow-scroll;
+      @apply flex-grow overflow-y-scroll;
     }
     .a-chat-threads-container--footer {
       background: var(--a-chat-threads--background-footer);

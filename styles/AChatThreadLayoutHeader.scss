@@ -1,6 +1,13 @@
 .a-chat-thread-layout-header {
   padding: var(--a-chat-threads--padding-y) var(--a-chat-threads--padding-x);
   @apply flex flex-row items-center justify-between;
-  .a-chat-thread-layout-header--left {}
+  .a-chat-thread-layout-header--left {
+    @apply flex flex-row items-center gap-1;
+  }
+  .a-chat-thread-layout-header--left--menu-icon {
+    font-size: 110%;
+    z-index: 10;
+    @apply text-gray-400 hover:text-gray-700 cursor-pointer;
+  }
   .a-chat-thread-layout-header--right {}
 }
