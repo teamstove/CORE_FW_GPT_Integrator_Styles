@@ -19,6 +19,8 @@
     //display: inline-block;
     .a-chat-init-display-chat-icon--inner-icon {
       //display: inline-block;
+      width: var(--a-chat-init-display--chat-icon--size);
+      height: var(--a-chat-init-display--chat-icon--size);
       .a-chat-init-display-chat-icon--inner-icon-img, .a-chat-init-display-chat-icon--inner-icon-img > svg {
         width: var(--a-chat-init-display--chat-icon--size);
         height: var(--a-chat-init-display--chat-icon--size);
