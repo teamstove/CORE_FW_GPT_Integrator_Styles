@@ -1,3 +1,9 @@
 .a-chat--agent-chat-ui {
-
+  // Base styles
+  font-weight: normal;
+  font-size: var(--a-chat--theme--font-size);
+  line-height: var(--a-chat--theme--line-height);
+  code {
+    color: var(--a-chat--theme--color-code);
+  }
 }

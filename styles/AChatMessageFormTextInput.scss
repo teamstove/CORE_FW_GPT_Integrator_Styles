@@ -4,6 +4,7 @@
     resize: none; /* ユーザーによるリサイズを無効化 */
     max-height: 300px; /* 最大高さの設定 */
     @apply w-full p-2;
+    line-height: 1.25em;
     @apply bg-gray-100 hover:bg-blue-50 focus:bg-blue-50;
     @apply border border-gray-200 hover:border-gray-100 rounded;
     @apply focus:border-gray-200 focus:outline-none focus:ring-0 focus:ring-gray-200 focus:ring-offset-0 focus:ring-offset-gray-100;

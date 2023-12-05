@@ -3,6 +3,9 @@
  */
 .a-chat-wrapper {
   /** Theme values **/
+  --a-chat--theme--font-size: 15px;
+  --a-chat--theme--line-height: 1.55em;
+  --a-chat--theme--color-code: #e83e8c;
   --a-chat--theme--spacer-base: 16px;
   --a-chat--theme--font-size-base: calc(var(--a-chat--theme--spacer-base) * 0.9);
   --a-chat--theme--color-primary: #2950d0;

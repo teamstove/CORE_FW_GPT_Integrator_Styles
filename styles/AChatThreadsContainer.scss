@@ -47,26 +47,11 @@
   }
   &.a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="popover"] {
     .a-chat-threads-container {
-      //position: fixed;
-      //z-index: var(--a-chat-threads--z-index);
-      //bottom: 0;
-      //width: var(--a-chat-threads--width); // TODO
-      //max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
       top: var(--a-chat-threads--popover-spacer);
       right: var(--a-chat-threads--popover-spacer);
     }
   }
-  // TODO: うまくいかん... Mobile での表示の場合 FullScreen になるようにしたい
   @media (max-width: 600px) {
-    .a-chat-threads-container--overlay {
-      position: fixed;
-      z-index: calc(var(--a-chat-threads--z-index) - 10);
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: var(--a-chat-threads--overlay-background);
-    }
     .a-chat-threads-container {
       width: calc(100vw - (var(--a-chat-threads--fullscreen-width-spacer) * 2));
       right: var(--a-chat-threads--fullscreen-width-spacer);
