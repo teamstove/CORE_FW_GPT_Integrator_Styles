@@ -1,3 +1,15 @@
 .a-chat-message-form-attach-files {
-  @apply flex-shrink;
+  @apply inline-block;
+  @apply flex flex-row flex-shrink-0 items-center gap-1;
+  @apply shadow;
+  @apply rounded;
+  @apply px-2 py-1;
+  background: var(--a-chat--theme--color-primary-lighten);
+  @apply text-white;
+  @apply ml-auto;
+  @apply cursor-pointer;
+
+  &-input {
+    @apply hidden;
+  }
 }
