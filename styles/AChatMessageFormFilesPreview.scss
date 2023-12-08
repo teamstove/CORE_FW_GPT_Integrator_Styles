@@ -4,22 +4,30 @@
     @apply flex flex-row flex-shrink-0 items-center gap-1;
     @apply shadow;
     @apply rounded;
-    @apply px-2 py-1;
-    background: var(--a-chat--theme--color-primary-lighten);
-    @apply text-white;
+    @apply px-1 py-0.5;
+    //background: var(--a-chat--theme--color-primary-lighten);
+    //@apply text-white;
+    color: var(--a-chat--theme--color-primary-lighten);
     @apply cursor-pointer;
     &-image {
-      @apply w-6 h-6;
+      //@apply w-6 h-6;
+      color: var(--a-chat--theme--color-primary-lighten);
       @apply rounded;
       @apply object-cover;
       @apply flex;
     }
     &-name {
-      @apply text-xs;
+      //@apply text-xs;
+      font-size: 10px;
     }
     &-remove {
       @apply text-xs;
       @apply cursor-pointer;
+      opacity: .5;
+      color: var(--a-chat--theme--color-danger);
+        &:hover {
+            opacity: 1;
+        }
     }
   }
 }
