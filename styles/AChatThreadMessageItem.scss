@@ -8,7 +8,8 @@
     width: 100%;
     //overflow: scroll;
   }
-  .a-chat-thread-message-item--footer {}
+  .a-chat-thread-message-item--footer {
+  }
   //@apply flex flex-row flex-wrap gap-1;
   /**
    * 自分から送信したものでなければ... right margin を設定
