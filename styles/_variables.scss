@@ -79,4 +79,10 @@
   /** Sidebar style の設定値 **/
   --a-chat-sidebar--max-width: 380px;
   --a-chat-sidebar--background: var(--a-chat--theme--color-gray-50);
+
+  /** 添付ファイルのStyleの設定値 **/
+  --a-chat-message-item-attachment-item--padding: 8px 12px;
+  --a-chat-message-item-attachment-item--background-color: var(--a-chat--theme--color-gray-500);
+  --a-chat-message-item-attachment-item--border-radius: 8px;
+  --a-chat-message-item-attachment-item--color: white;
 }

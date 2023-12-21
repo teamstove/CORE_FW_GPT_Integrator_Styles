@@ -1,0 +1,23 @@
+.a-chat-thread-message-item-content-attachments {
+  display: flex;
+  padding-left: 10px;
+
+  &--item {
+    padding: var(--a-chat-message-item-attachment-item--padding);
+    background-color: var(--a-chat-message-item-attachment-item--background-color);
+    border-radius: var(--a-chat-message-item-attachment-item--border-radius);
+    color: var(--a-chat-message-item-attachment-item--color);
+    display: flex;
+
+    .file-icon {
+      width: 30px;
+      height: 30px;
+        margin-right: 10px;
+    }
+
+    .type {
+      color: var(--a-chat--theme--color-gray-300);
+      font-size: 12px;
+    }
+  }
+}
