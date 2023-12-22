@@ -6,6 +6,7 @@
   "author": "STOVE, Inc.",
   "license": "MIT",
   "scripts": {
+    "dev": "yarn build:css:watch",
     "build:css": "postcss main.scss -o dist/gpt-integrator-styles.min.css",
     "build:css:watch": "yarn build:css --watch"
   },
