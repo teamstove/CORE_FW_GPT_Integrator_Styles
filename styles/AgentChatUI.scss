@@ -6,4 +6,9 @@
   code {
     color: var(--a-chat--theme--color-code);
   }
+  a {
+    color: var(--a-chat--theme--color-link);
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
