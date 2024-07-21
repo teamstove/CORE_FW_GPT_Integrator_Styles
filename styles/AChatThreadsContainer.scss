@@ -11,6 +11,7 @@
   bottom: 0;
   width: var(--a-chat-threads--width); // TODO
   max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
+  height: 100%;
   @apply drop-shadow-xl z-50 shadow-blue-500;
   .a-chat-threads-container--inner {
     //overflow: scroll;
