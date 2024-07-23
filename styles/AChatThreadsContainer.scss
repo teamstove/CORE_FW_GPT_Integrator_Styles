@@ -6,21 +6,23 @@
   background: var(--a-chat-threads--background);
   border: var(--a-chat-threads--border);
   border-radius: var(--a-chat-threads--border-radius);
-  position: fixed;
+  //position: fixed;
   z-index: var(--a-chat-threads--z-index);
   bottom: 0;
-  width: var(--a-chat-threads--width); // TODO
-  max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
-  height: 100%;
-  @apply drop-shadow-xl z-50 shadow-blue-500;
+  //width: var(--a-chat-threads--width); // TODO
+  //max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
+  //height: 100%;
   .a-chat-threads-container--inner {
     //overflow: scroll;
-    width: 100%;
-    height: 100%;
+    //width: 100%;
+    height: var(--a-chat-threads--height);
+    //max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
     @apply flex flex-col;
     .a-chat-threads-container--header {
       background-color: var(--a-chat-threads--background-header);
       border-radius: var(--a-chat-threads--border-radius) var(--a-chat-threads--border-radius) 0 0;
+      //border-bottom: 1px solid var(--a-chat-threads--border-color);
+      @apply drop-shadow-md z-50 shadow-blue-500;
     }
     .a-chat-threads-container--main {
       @apply flex-grow overflow-y-scroll;
@@ -28,6 +30,7 @@
     .a-chat-threads-container--footer {
       background: var(--a-chat-threads--background-footer);
       border-radius: 0 0 var(--a-chat-threads--border-radius) var(--a-chat-threads--border-radius);
+      @apply drop-shadow-md z-50 shadow-blue-500;
     }
   }
 }
@@ -39,6 +42,7 @@
 .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="popover"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="modal"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="full-screen"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="sidebar-right"], .a-chat-wrapper[data-ui-layout-config--chatthreadwindowdisplaytype="sidebar-left"] {
   .a-chat-threads-container {
     position: fixed;
+    @apply drop-shadow-xl z-50 shadow-blue-500;
     z-index: var(--a-chat-threads--z-index);
     //bottom: 0;
     width: var(--a-chat-threads--width); // TODO
