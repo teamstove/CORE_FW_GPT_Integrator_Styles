@@ -1,0 +1,66 @@
+.a-chat-modal {
+  &--overlay {
+    @apply fixed inset-0 overflow-auto bg-black bg-opacity-50 flex py-3;
+  }
+
+  &--container {
+    @apply relative px-6 py-4 bg-white m-auto flex-col flex rounded-lg;
+
+    &.a-chat-modal--size-sm {
+      @apply max-w-sm w-full;
+    }
+
+    &.a-chat-modal--size-md {
+      @apply max-w-2xl w-full;
+    }
+
+    &.a-chat-modal--size-lg {
+      @apply max-w-4xl w-full;
+    }
+
+    &.a-chat-modal--size-xl {
+      @apply max-w-6xl w-full;
+    }
+
+    &.a-chat-modal--size-full {
+      @apply w-full h-full;
+    }
+  }
+
+  &--header {
+    @apply flex justify-between items-center pb-0;
+  }
+
+  &--title {
+    @apply text-lg font-bold;
+  }
+
+  &--modal-close {
+    @apply text-black text-2xl;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--body {
+    @apply my-5;
+  }
+
+  &--footer {
+    @apply flex justify-end pt-2;
+  }
+
+  &--modal-button {
+    @apply px-4 py-2 rounded;
+
+    &-primary {
+      @apply bg-blue-500 text-white hover:bg-blue-600;
+    }
+
+    &-secondary {
+      @apply bg-gray-200 text-black hover:bg-gray-300 mr-2;
+    }
+  }
+}
