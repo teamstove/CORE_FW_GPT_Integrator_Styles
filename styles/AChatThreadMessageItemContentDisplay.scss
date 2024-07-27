@@ -1,0 +1,119 @@
+.a-chat-thread-message-item-content-display {
+  position: relative;
+}
+
+.a-chat-thread-message-item-content-display .a-chat-thread-message-item-content-display--section, .a-chat-thread-message-loading-assistant-message-placeholder--message-body {
+  margin: var(--a-chat-threads--padding-y) var(--a-chat-threads--padding-x) calc(var(--a-chat-threads--padding-y) * 1.3);
+  @apply shadow shadow-blue-100;
+  font-size: var(--a-chat-message-item-content-display--font-size);
+  line-height: var(--a-chat-message-item-content-display--line-height);
+  letter-spacing: var(--a-chat-message-item-content-display--letter-spacing);
+  font-weight: var(--a-chat-message-item-content-display--font-weight);
+  background: var(--a-chat-message-item-content-display--background);
+  color: var(--a-chat-message-item-content-display--color);
+  padding: var(--a-chat-message-item-content-display--padding);
+  border-radius: var(--a-chat-message-item-content-display--border-radius);
+  border: var(--a-chat-message-item-content-display--border);
+  border-top-left-radius: 0;
+  position: relative;
+
+  p, ul, ol, dl, blockquote, pre {
+    @apply mb-1;
+  }
+  pre {
+    // scroll
+    @apply overflow-x-auto;
+    max-width: 100%;
+    @apply bg-cyan-950 text-white p-2 rounded;
+    font-size: 90%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold mt-2 mb-1;
+    font-size: 1.2em;
+  }
+
+  hr {
+    @apply my-3 mx-1;
+    border: 0;
+    border-top: 1px solid var(--a-chat--theme--color-gray-200);
+  }
+
+  // ul, ol の style を設定
+  ul, ol {
+    @apply list-disc ml-4;
+  }
+  // blockquote の style を設定
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-2;
+  }
+  // Emoticon
+  img.a-chat-thread-message-item-content-display--section--emotion-image {
+    position: absolute;
+    top: var(--a-chat-message-item-content-display--emotion-image-top);
+    left: var(--a-chat-message-item-content-display--emotion-image-left);
+    width: var(--a-chat-message-item-content-display--emotion-image-size);
+    height: var(--a-chat-message-item-content-display--emotion-image-size);
+    object-fit: cover;
+    object-position: center center;
+    @apply rounded-full;
+  }
+  /**
+   * アイコン表示時の spacer
+   */
+  .a-chat-thread-message-item-content-display--section--emotion-image--after-spacer {
+    display: inline-block;
+    width: var(--a-chat-message-item-content-display--emotion-image-size);
+    margin-right: calc(var(--a-chat-message-item-content-display--emotion-image-left) * 2);
+    height: var(--a-chat-message-item-content-display--emotion-image-size);
+    margin-bottom: calc(var(--a-chat-message-item-content-display--emotion-image-top) * 2);
+    float: left;
+  }
+}
+
+.a-chat-thread-message-loading-assistant-message-placeholder--message-body {
+  @apply mt-1;
+}
+
+.a-chat-thread-message-item-content-display--show-all {
+  text-align: right;
+  font-size: .86em;
+  color: var(--a-chat--theme--color-primary);
+  text-decoration: underline;
+  @apply px-2 absolute top-0 right-0;
+  margin-top: -6px;
+  cursor: pointer;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+/**
+ * 自分から送信したメッセージの Style を設定
+ */
+[data-a-chat-thread-message-item--is-my-mesage="true"] {
+  .a-chat-thread-message-item-content-display .a-chat-thread-message-item-content-display--section {
+    //--a-chat-message-item-content-display--sent-from-me--background: var(--a-chat--theme--color-primary);
+    //--a-chat-message-item-content-display--sent-from-me--color: white;
+    //--a-chat-message-item-content-display--sent-from-me--border: 1px solid var(--a-chat--theme--color-primary-lighten);
+    background: var(--a-chat-message-item-content-display--sent-from-me--background);
+    color: var(--a-chat-message-item-content-display--sent-from-me--color);
+    border: var(--a-chat-message-item-content-display--sent-from-me--border);
+    border-top-left-radius: var(--a-chat-message-item-content-display--border-radius);
+    border-top-right-radius: 0;
+    text-indent: 0;
+    margin-top: 0;
+    img.a-chat-thread-message-item-content-display--section--emotion-image, .a-chat-thread-message-item-content-display--section--emotion-image--after-spacer {
+      display: none;
+    }
+  }
+}
+
+.a-chat-thread-message-item-content-display--thought-log {
+  color: var(--a-chat--theme--color-gray-500);
+  font-size: .8em;
+  //font-style: italic;
+  letter-spacing: .4px;
+  margin: var(--a-chat-threads--padding-y) var(--a-chat-threads--padding-x) calc(var(--a-chat-threads--padding-y) * 1.3);
+}
+
+

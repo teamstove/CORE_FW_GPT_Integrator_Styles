@@ -57,22 +57,22 @@
   --a-chat-init-display--chat-icon--fill-color: white;
 
   /** Message Item の設定値 **/
-  --a-chat-message-item-content-body-text--font-size: 13.5px;
-  --a-chat-message-item-content-body-text--line-height: 1.55em;
-  --a-chat-message-item-content-body-text--letter-spacing: 0.01em;
-  --a-chat-message-item-content-body-text--font-weight: 400;
-  --a-chat-message-item-content-body-text--background: white;
-  --a-chat-message-item-content-body-text--color: var(--a-chat--theme--color-gray-700);
-  --a-chat-message-item-content-body-text--padding: 8px 12px;
-  --a-chat-message-item-content-body-text--border-radius: 12px;
-  --a-chat-message-item-content-body-text--border: 1px solid var(--a-chat--theme--color-gray-200);
-  --a-chat-message-item-content-body-text--sent-from-me--background: var(--a-chat--theme--color-primary);
-  --a-chat-message-item-content-body-text--sent-from-me--color: white;
-  --a-chat-message-item-content-body-text--sent-from-me--border: 1px solid var(--a-chat--theme--color-primary-lighten);
-  --a-chat-message-item-content-body-text--emotion-image-size: 40px;
-  --a-chat-message-item-content-body-text--emotion-image-top: -6px;
-  --a-chat-message-item-content-body-text--emotion-image-left: -8px;
-  --a-chat-message-item-content-body-text--emotion-image-size--on-mobile: 32px;
+  --a-chat-message-item-content-display--font-size: 13.5px;
+  --a-chat-message-item-content-display--line-height: 1.55em;
+  --a-chat-message-item-content-display--letter-spacing: 0.01em;
+  --a-chat-message-item-content-display--font-weight: 400;
+  --a-chat-message-item-content-display--background: white;
+  --a-chat-message-item-content-display--color: var(--a-chat--theme--color-gray-700);
+  --a-chat-message-item-content-display--padding: 8px 12px;
+  --a-chat-message-item-content-display--border-radius: 12px;
+  --a-chat-message-item-content-display--border: 1px solid var(--a-chat--theme--color-gray-200);
+  --a-chat-message-item-content-display--sent-from-me--background: var(--a-chat--theme--color-primary);
+  --a-chat-message-item-content-display--sent-from-me--color: white;
+  --a-chat-message-item-content-display--sent-from-me--border: 1px solid var(--a-chat--theme--color-primary-lighten);
+  --a-chat-message-item-content-display--emotion-image-size: 40px;
+  --a-chat-message-item-content-display--emotion-image-top: -6px;
+  --a-chat-message-item-content-display--emotion-image-left: -8px;
+  --a-chat-message-item-content-display--emotion-image-size--on-mobile: 32px;
 
 
   /** Form style の設定値 **/
