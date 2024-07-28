@@ -124,10 +124,10 @@
     @apply space-y-2;
 
     &--question {
-      @apply text-gray-800 font-bold mb-3 relative pl-6;
-      &::before {
-        content: "Q";
-        @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-5 h-5 bg-gray-100 text-gray-400 rounded-full flex items-center justify-center font-bold;
+      @apply text-gray-800 font-bold mb-3 relative;
+      &--order {
+        //content: "Q";
+        @apply inline-block bg-gray-100 text-gray-400 rounded-lg text-center justify-center font-bold px-2;
       }
     }
 
