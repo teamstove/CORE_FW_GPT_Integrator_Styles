@@ -205,6 +205,9 @@
     &__info {
       @apply text-xs text-gray-200;
     }
+    &__format {
+      @apply rounded-sm bg-gray-700 text-xs px-1.5 py-0.5;
+    }
     &__output-type {
       @apply rounded-sm bg-gray-700 text-xs px-1.5 py-0.5;
     }
@@ -247,5 +250,17 @@
       }
     }
   }
+  // actions
+  &--actions__item {
+    @apply flex flex-wrap gap-2 justify-end;
+    &__inner {
+      @apply inline-flex items-center;
+      &__button {
+        @apply px-3 py-1 text-xs bg-white border border-gray-200 rounded cursor-pointer hover:bg-gray-200 transition-colors duration-200 text-gray-600;
+      }
+    }
+  }
+
+
 }
 
