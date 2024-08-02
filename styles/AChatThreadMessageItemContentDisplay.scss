@@ -142,13 +142,25 @@
         @apply flex flex-wrap items-center gap-3;
 
         &--option {
-          @apply flex items-center cursor-pointer hover:opacity-70 transition-opacity duration-200;
+          &--label {
+            @apply flex items-center cursor-pointer hover:opacity-70 transition-opacity duration-200;
+          }
 
-          &--radio,
-          &--input,
-          &--checkbox {
-            @apply cursor-pointer appearance-none w-4 h-4 border-2 border-gray-300 rounded-full mr-1 checked:bg-blue-500 checked:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200 ease-in-out;
+          &--input {
+            @apply cursor-pointer appearance-none w-4 h-4 border-2 border-gray-300 mr-1 checked:bg-blue-500 checked:border-blue-500 transition-colors duration-200 ease-in-out;
 
+          }
+          &--input[type="radio"] {
+            @apply rounded-full;
+            &:checked {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd' /%3E%3C/svg%3E");
+              background-size: 100%;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          &--input[type="checkbox"] {
+            @apply rounded-sm;
             &:checked {
               background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd' /%3E%3C/svg%3E");
               background-size: 100%;
@@ -157,13 +169,6 @@
             }
           }
 
-          &--checkbox {
-            @apply rounded cursor-pointer;
-          }
-
-          &--label {
-            @apply text-sm text-gray-700 select-none cursor-pointer;
-          }
         }
       }
     }
