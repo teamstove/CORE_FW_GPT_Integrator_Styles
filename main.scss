@@ -1,5 +1,5 @@
 /** load tailwindcss, Ref: https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports **/
-@import "styles/_reset.scss";
+//@import "styles/_reset.scss";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";

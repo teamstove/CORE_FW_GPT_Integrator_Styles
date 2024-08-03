@@ -186,6 +186,9 @@
     //  @apply shadow-lg transform -translate-y-1;
     //}
 
+    &__content {
+      @apply w-full;
+    }
     &__content__inner {
       @apply flex-grow;
       @apply flex flex-wrap items-baseline gap-y-1 gap-x-1;
@@ -261,7 +264,7 @@
     &__inner {
       @apply inline-flex items-center;
       &__button {
-        @apply px-3 py-1 text-xs bg-white border border-gray-200 rounded cursor-pointer hover:bg-gray-200 transition-colors duration-200 text-gray-600;
+        @apply px-3 py-1 text-xs bg-white border border-gray-200 rounded cursor-pointer hover:bg-gray-200 transition-colors duration-200 text-gray-700;
       }
     }
   }
