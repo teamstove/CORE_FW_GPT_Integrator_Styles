@@ -6,6 +6,7 @@
 
 
 //@import "styles/_variables.scss";
+//@import "styles/_buttons.scss";
 
 /** Wrappers, Layouts **/
 @import "styles/AgentChatUI.scss";
@@ -41,6 +42,7 @@
 @import "styles/AChatMessageFormSubmitButton.scss";
 @import "styles/AChatMessageFormAttachFiles.scss";
 @import "styles/AChatMessageFormFilesPreview.scss";
+@import "styles/AChatThreadMessageReEditButton.scss";
 
 /** State Controls **/
 @import "styles/a-chat-ui-state-control-full-screen-toggler.scss";
