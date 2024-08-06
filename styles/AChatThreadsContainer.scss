@@ -16,7 +16,7 @@
     //overflow: scroll;
     //width: 100%;
     height: var(--a-chat-threads--height);
-    //max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
+    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 6));
     @apply flex flex-col;
     .a-chat-threads-container--header {
       background-color: var(--a-chat-threads--background-header);
