@@ -1,6 +1,6 @@
 .a-chat-message-form-text-input {
   .a-chat-message-form-text-input--textarea {
-    overflow-y: hidden; /* スクロールバーを隠す */
+    overflow-y: scroll;
     resize: none; /* ユーザーによるリサイズを無効化 */
     max-height: 300px; /* 最大高さの設定 */
     @apply w-full p-2;
