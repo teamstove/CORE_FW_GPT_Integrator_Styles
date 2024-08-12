@@ -150,10 +150,13 @@
 
         &--option {
           &--label {
-            @apply flex items-center cursor-pointer hover:opacity-70 transition-opacity duration-200;
+            @apply flex items-center cursor-pointer;
             &[disabled="true"] {
               @apply cursor-not-allowed opacity-80;
             }
+            //&:hover {
+            //  opacity: .7;
+            //}
           }
 
           &--input {
