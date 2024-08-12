@@ -6,4 +6,15 @@
   &--created-at {
     @apply text-xs text-gray-500;
   }
+  &--usage-info { //, &--open-message-detail-link
+    display: none;
+  }
+  &:hover {
+    .a-chat-thread-message-item-user-name-display--usage-info {
+      display: block;
+    }
+    .a-chat-thread-message-item-user-name-display--open-message-detail-link {
+        display: block;
+    }
+  }
 }

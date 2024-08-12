@@ -79,8 +79,9 @@
   .a-chat-threads-container {
     position: fixed;
     z-index: var(--a-chat-threads--z-index);
-    bottom: 0;
-    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer) * 2));
+    top: calc(var(--a-chat-threads--popover-spacer) / 2);
+    bottom: calc(var(--a-chat-threads--popover-spacer) / 2);
+    max-height: calc(100vh - (var(--a-chat-threads--popover-spacer)));
     width: calc(100vw - (var(--a-chat-threads--popover-spacer) * 2));
     max-width: var(--a-chat-threads--fullscreen-max-width);
     margin: 0 auto;

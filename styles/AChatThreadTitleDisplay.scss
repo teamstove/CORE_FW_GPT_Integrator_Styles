@@ -1,0 +1,46 @@
+.a-chat-thread-title-display {
+  @apply relative;
+
+  &--editable {
+    @apply cursor-pointer;
+  }
+
+  &--inner {
+    @apply flex items-center;
+
+    &--display-title {
+      @apply flex items-center gap-2 ;
+      @apply hover:bg-gray-100 transition-colors duration-200;
+
+      .a-chat-thread-title-display--inner--start-edit-button {
+        @apply text-gray-500 hover:text-gray-700;
+      }
+    }
+
+    &--edit-form {
+      @apply flex items-center gap-2 p-2;
+
+      input {
+        @apply flex-grow p-1 border border-gray-300 rounded;
+        @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+        width: 320px;
+        max-width: 80vw;
+      }
+
+      &--cancel-button,
+      &--save-button {
+        @apply py-1 px-1 rounded border border-gray-200;
+        @apply flex items-center;
+        @apply transition-colors duration-200;
+      }
+
+      &--cancel-button {
+        @apply text-rose-500 hover:text-rose-600 hover:bg-gray-100;
+      }
+
+      &--save-button {
+        @apply text-blue-500 hover:text-blue-700 hover:bg-blue-100;
+      }
+    }
+  }
+}
