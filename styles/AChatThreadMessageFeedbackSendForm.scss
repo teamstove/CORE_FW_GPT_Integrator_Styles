@@ -1,0 +1,100 @@
+.a-chat-thread-message-feedback-send-form {
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:h-auto hover:overflow-visible focus:h-auto focus:overflow-visible;
+
+  &--rating {
+    @apply mb-4;
+
+    &--label {
+      @apply text-sm font-medium mb-2;
+    }
+
+    //&--stars {
+    //  @apply flex;
+    //
+    //  input[type="radio"] {
+    //    @apply hidden;
+    //  }
+    //
+    //  label {
+    //    @apply cursor-pointer text-gray-300 text-2xl;
+    //
+    //    &::before {
+    //      content: '★';
+    //    }
+    //
+    //    &:hover,
+    //    &:hover ~ label,
+    //    input[type="radio"]:checked ~ label {
+    //      @apply text-yellow-400;
+    //    }
+    //  }
+    //}
+    &--inputs {
+        @apply flex items-center gap-2;
+        @apply cursor-pointer text-gray-300 text-2xl hover:text-yellow-400;
+      &--item {
+        @apply flex flex-col items-center;
+        @apply cursor-pointer text-gray-300 text-2xl hover:text-yellow-400;
+        &.rating-selected {
+          @apply text-yellow-500;
+        }
+        &.rating-over {
+          @apply text-yellow-400;
+        }
+      }
+    }
+  }
+
+
+  &--content {
+    @apply mb-4;
+
+    &--label {
+      @apply text-sm font-medium mb-2;
+    }
+
+    &--textarea {
+      @apply w-full p-2 bg-gray-100 hover:bg-blue-50 focus:bg-blue-50;
+      @apply border border-gray-200 hover:border-gray-100 rounded;
+      @apply focus:border-gray-200 focus:outline-none focus:ring-0 focus:ring-gray-200 focus:ring-offset-0 focus:ring-offset-gray-100;
+      @apply resize-none overflow-y-auto;
+      max-height: 300px;
+      line-height: 1.25em;
+
+      &.submittable {
+        @apply bg-blue-50 border-blue-200;
+      }
+    }
+  }
+
+  &--submit {
+    @apply flex items-center;
+
+    &--button {
+      @apply inline-flex items-center gap-1 px-2 py-1 rounded shadow;
+      @apply transition-colors duration-200 ease-in-out;
+      @apply focus:outline-none focus:ring-0 focus:ring-blue-500 focus:ring-offset-0 focus:ring-offset-white;
+
+      &:not(:disabled) {
+        background: var(--a-chat-form--submit-button--background, theme('colors.blue.500'));
+        @apply text-white shadow-blue-200;
+      }
+
+      &:disabled {
+        @apply bg-gray-200 text-gray-500 font-bold cursor-not-allowed;
+      }
+    }
+  }
+}
+
+.a-chat-thread-message-feedback-send-form-open-link {
+  a.a-chat-thread-message-feedback-send-form-open-link--link {
+    @apply text-xs text-pink-500 font-medium cursor-pointer opacity-40 hover:opacity-100 focus:opacity-100;
+    @apply transition-colors duration-200 ease-in-out;
+
+    &:hover {
+      @apply text-pink-600;
+    }
+  }
+}
