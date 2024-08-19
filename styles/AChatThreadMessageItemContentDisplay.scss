@@ -61,9 +61,9 @@
    * アイコン表示時の spacer
    */
   .a-chat-thread-message-item-content-display--section--emotion-image--after-spacer {
-    display: inline-block;
+    display: block;
     width: var(--a-chat-message-item-content-display--emotion-image-size);
-    margin-right: calc(var(--a-chat-message-item-content-display--emotion-image-left) * 2);
+    margin-right: calc(var(--a-chat-message-item-content-display--emotion-image-size) / 4 * -1);
     height: var(--a-chat-message-item-content-display--emotion-image-size);
     margin-bottom: calc(var(--a-chat-message-item-content-display--emotion-image-top) * 2);
     float: left;
@@ -77,8 +77,19 @@
 .a-chat-thread-message-item-content-display--text {
   line-height: var(--a-chat-message-item-content-display--line-height);
   p, ul, ol, dl, blockquote, pre {
-    @apply my-3;
+    @apply mb-2 px-1;
     font-size: inherit;
+  }
+  ol {
+    list-style: auto !important;
+    margin-left: 1em !important;
+  }
+  .a-chat-thread-message-item-content-display--section > div {
+    > ol {
+      list-style: auto !important;
+      margin-left: 1em !important;
+    }
+
   }
   ul > li, ol > li {
     @apply mb-1;
